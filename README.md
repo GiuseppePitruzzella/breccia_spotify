@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <a href="https://github.com/GiuseppePitruzzella/breccia_spotify">
+    <img src="assets/images/logo.png" alt="Logo" width="300">
+  </a>
 
-## Getting Started
+  <h3 align="center">Breccia Spotify Redesign</h3>
 
-First, run the development server:
+  <p align="center">
+    A React-based implementation of designer Breccia's Spotify redesign, built with a modern full-stack setup.
+    <br />
+    <a href="https://github.com/GiuseppePitruzzella/breccia_spotify/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/GiuseppePitruzzella/breccia_spotify/issues">Request Feature</a>
+  </p>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📘 Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Breccia Spotify Redesign** is a stylistic exercise and a practical full-stack project that brings to life the Spotify redesign created by designer [Breccia](https://www.youtube.com/watch?v=9tVN-r9UBnc).  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The goal of this project is twofold:  
+1. To explore modern frontend and backend technologies through the recreation of a real-world music streaming experience.  
+2. To provide a polished, visually refined user interface inspired by Breccia’s design, while integrating real-world backend functionalities such as **authentication, subscriptions, and payments**.  
 
-## Learn More
+Key features include:  
+- 🎨 **Modern UI**: Tailwind CSS for responsive design based on Breccia's vision.  
+- 🔐 **Authentication**: Managed with **Supabase**.  
+- 💳 **Payments**: Integrated with **Stripe** for subscription handling.  
+- 🗄️ **Database**: **PostgreSQL** for persistent user and music data.  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Data Source Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project does not rely on a static dataset. Instead, it integrates a **PostgreSQL database** managed by **Supabase**.  
 
-## Deploy on Vercel
+You will need to:  
+1. Create a Supabase project and obtain the API keys.  
+2. Configure authentication providers in the Supabase dashboard (e.g., email/password, OAuth).  
+3. Set up a Stripe account for subscription payments and add your API keys to the environment file.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Environment Setup
+
+The application is fully containerized with **Docker** and **Docker Compose**, ensuring consistency across environments.  
+
+Main technologies used:  
+- **React + Next.js**: Frontend application with modern routing.  
+- **Tailwind CSS**: Styling and layout.  
+- **Supabase**: Authentication and database management.  
+- **Stripe**: Payment and subscription processing.  
+- **PostgreSQL**: Persistent storage.  
+
+To run the project:  
+1. Clone the repository.  
+2. Copy `.env.example` into `.env` and fill in your keys.  
+3. Run `docker-compose up --build`.  
