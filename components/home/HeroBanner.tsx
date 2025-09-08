@@ -1,0 +1,1 @@
+// La sezione grande in alto con immagine/artista/playlist evidenziata.

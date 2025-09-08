@@ -1,0 +1,1 @@
+// Contiene le tab in alto (Home, Esplora, Playlist) e la barra di ricerca.

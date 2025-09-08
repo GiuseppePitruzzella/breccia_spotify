@@ -33,7 +33,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
     return (
         <div className="flex h-full">
-            <div className="hidden md:flex flex-col gap-y-2 bg-black h-full w-[900px] p-2">
+            <div className="hidden md:flex flex-col gap-y-2 bg-black h-full aspect-video p-2">
                 <Box>
                     <div className="flex flex-row gap-y-4 px-5 py-4">
                         {routes.map((item) => (
@@ -44,7 +44,22 @@ const Sidebar: React.FC<SidebarProps> = ({
                         ))}
                     </div>
                 </Box>
+
+                {/* News */}
                 <Box className="overflow-y-auto h-full">
+                    NEWS
+                    <Library />
+                </Box>
+
+                {/* History */}
+                <Box className="overflow-y-auto h-full">
+                    Your History!
+                    <Library />
+                </Box>
+
+                {/* Discover / Playlists */}
+                <Box className="overflow-y-auto h-full">
+                    Discover new playlists!
                     <Library />
                 </Box>
             </div>
